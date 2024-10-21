@@ -1,0 +1,265 @@
+/*Fuente de la WEB*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----Modificacion Principal----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #fafafa;
+    padding: 150px 0 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container ul li {
+    position: relative;
+    float: left;
+}
+.container ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #323232;
+    display: block;
+}
+.container ul li a:hover {
+    color: #318c6d;
+} 
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #318c6d;
+    text-transform: uppercase;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/*----Modificacion de INICIO----*/
+.titulo-inicio {
+    font-size: 200px;
+    color: #318c6d;
+}
+
+/*----Modificacion de REGISTRO----*/
+
+.imagen-registro {
+    float: left; /* Posiciona la imagen a la izquierda del contenido */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+    width: 450px; /* Tamaño de la imagen (ajústalo según lo que necesites) */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.registro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.formulario {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+h2{
+    color: #318c6d;
+    font-size: 35px;
+    text-align: center;
+}
+label{
+    color: #318c6d;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #318c6d;
+    outline: none; 
+}
+input::placeholder, textarea::placeholder {
+    color: #b5cab6;
+}
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.form-txt a{
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn {
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #318c6d;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #318c6d;
+}
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
+}
+/* Pantalla pequeña (responsivo) */
+@media (max-width: 768px) {
+    .imagen-registro {
+        display: none; /* Oculta la imagen en pantallas pequeñas */
+    }
+    .registro-container {
+        display: flex;
+        justify-content: center; /* Centra el formulario horizontalmente */
+    }
+    .formulario {
+        width: 99%; /* El formulario ocupa todo el ancho de la pantalla */
+        max-width: 400px; /* Limita el ancho máximo para una mejor legibilidad */
+    }
+}
+
+/*----Modificacion de SUGERENCIAS----*/
+.sugerencias-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 550px;
+}
+.sugerencias-inputgroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+h2{
+    color: #318c6d;
+    font-size: 30px;
+    text-align: center;
+}
+label{
+    color: #318c6d;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/* Estilos para los inputs */
+input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="password"], textarea, select, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f0f7f4;
+}
+
+/* Estilos para los botones */
+input[type="submit"], .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #207567;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, .btn:hover {
+    background-color: #18594b;
+}
+
+/* Estilos para el texto de los enlaces */
+.form-txt a {
+    color: #207567;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.form-txt a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo adicional para el select */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f7f4;
+}
+
+/* Estilo para el textarea */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Estilo adicional para el mensaje de error si no está logueado */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+

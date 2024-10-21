@@ -1,0 +1,15 @@
+.imagen {
+    height: 280px;
+    position: relative;
+  }
+  
+  .imagen img {
+    width: auto;
+    height: 100%;
+  }
+  
+  .card-title{
+      height: 50px;
+      margin-left: 350px;
+  
+    }
